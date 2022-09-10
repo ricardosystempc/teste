@@ -1,0 +1,113 @@
+ERROR - 2022-09-08 08:23:32 --> Error connecting to the database: Unknown database 'listacompra'
+CRITICAL - 2022-09-08 08:29:36 --> Invalid file: teste.php
+#0 C:\laragon\www\teste3\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('teste.php')
+#1 C:\laragon\www\teste3\system\Common.php(1089): CodeIgniter\View\View->render('teste', Array, true)
+#2 C:\laragon\www\teste3\app\Controllers\Home.php(14): view('teste')
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(832): App\Controllers\Home->teste()
+#4 C:\laragon\www\teste3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-09-08 08:35:17 --> syntax error, unexpected token "}", expecting ";"
+#0 C:\laragon\www\teste3\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('teste')
+#1 C:\laragon\www\teste3\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('teste')
+#2 C:\laragon\www\teste3\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-08 19:25:28 --> Class "App\Controllers\Manager\CategoryModel" not found
+#0 C:\laragon\www\teste3\system\CodeIgniter.php(832): App\Controllers\Manager\CategoriesController->getAllCategories()
+#1 C:\laragon\www\teste3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\CategoriesController))
+#2 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-08 19:25:35 --> Class "App\Controllers\Manager\CategoryModel" not found
+#0 C:\laragon\www\teste3\system\CodeIgniter.php(832): App\Controllers\Manager\CategoriesController->getAllCategories()
+#1 C:\laragon\www\teste3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\CategoriesController))
+#2 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-08 19:32:00 --> Class "App\Controllers\Manager\CategoryModel" not found
+#0 C:\laragon\www\teste3\system\CodeIgniter.php(832): App\Controllers\Manager\CategoriesController->getAllCategories()
+#1 C:\laragon\www\teste3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\CategoriesController))
+#2 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-08 19:36:38 --> Class "App\Controllers\Manager\CategoryModel" not found
+#0 C:\laragon\www\teste3\system\CodeIgniter.php(832): App\Controllers\Manager\CategoriesController->getAllCategories()
+#1 C:\laragon\www\teste3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\CategoriesController))
+#2 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-08 19:39:53 --> Class "App\Controllers\Manager\CategoryModel" not found
+#0 C:\laragon\www\teste3\system\CodeIgniter.php(832): App\Controllers\Manager\CategoriesController->getAllCategories()
+#1 C:\laragon\www\teste3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\CategoriesController))
+#2 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-08 19:45:17 --> Class "App\Controllers\Manager\CategoryModel" not found
+#0 C:\laragon\www\teste3\system\CodeIgniter.php(832): App\Controllers\Manager\CategoriesController->getAllCategories()
+#1 C:\laragon\www\teste3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\CategoriesController))
+#2 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-08 19:45:45 --> Class "App\Controllers\Manager\CategoryModel" not found
+#0 C:\laragon\www\teste3\system\CodeIgniter.php(832): App\Controllers\Manager\CategoriesController->getAllCategories()
+#1 C:\laragon\www\teste3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\CategoriesController))
+#2 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-08 19:45:54 --> Class "App\Controllers\Manager\CategoryModel" not found
+#0 C:\laragon\www\teste3\system\CodeIgniter.php(832): App\Controllers\Manager\CategoriesController->getAllCategories()
+#1 C:\laragon\www\teste3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\CategoriesController))
+#2 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-08 19:46:28 --> Class "App\Controllers\Manager\CategoryModel" not found
+#0 C:\laragon\www\teste3\system\CodeIgniter.php(832): App\Controllers\Manager\CategoriesController->getAllCategories()
+#1 C:\laragon\www\teste3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\CategoriesController))
+#2 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-08 19:46:37 --> Class "App\Controllers\Manager\CategoryModel" not found
+#0 C:\laragon\www\teste3\system\CodeIgniter.php(832): App\Controllers\Manager\CategoriesController->getAllCategories()
+#1 C:\laragon\www\teste3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\CategoriesController))
+#2 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-08 19:50:39 --> Class "App\Controllers\Manager\CategoryModel" not found
+#0 C:\laragon\www\teste3\system\CodeIgniter.php(832): App\Controllers\Manager\CategoriesController->getAllCategories()
+#1 C:\laragon\www\teste3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\CategoriesController))
+#2 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-08 19:53:21 --> Class "App\Controllers\Manager\CategoryModel" not found
+#0 C:\laragon\www\teste3\system\CodeIgniter.php(832): App\Controllers\Manager\CategoriesController->getAllCategories()
+#1 C:\laragon\www\teste3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\CategoriesController))
+#2 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-08 19:56:03 --> Class "App\Controllers\Manager\CategoryModel" not found
+#0 C:\laragon\www\teste3\system\CodeIgniter.php(832): App\Controllers\Manager\CategoriesController->getAllCategories()
+#1 C:\laragon\www\teste3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\CategoriesController))
+#2 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-08 19:56:09 --> Class "App\Controllers\Manager\CategoryModel" not found
+#0 C:\laragon\www\teste3\system\CodeIgniter.php(832): App\Controllers\Manager\CategoriesController->getAllCategories()
+#1 C:\laragon\www\teste3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\CategoriesController))
+#2 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-08 19:56:13 --> Class "App\Controllers\Manager\CategoryModel" not found
+#0 C:\laragon\www\teste3\system\CodeIgniter.php(832): App\Controllers\Manager\CategoriesController->getAllCategories()
+#1 C:\laragon\www\teste3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\CategoriesController))
+#2 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-08 19:56:34 --> Class "App\Controllers\Manager\CategoryModel" not found
+#0 C:\laragon\www\teste3\system\CodeIgniter.php(832): App\Controllers\Manager\CategoriesController->getAllCategories()
+#1 C:\laragon\www\teste3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\CategoriesController))
+#2 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
