@@ -2,12 +2,21 @@
 
 namespace App\Controllers\Manager;
 
-use App\Models\CategoryModel;
 
 use App\Controllers\BaseController;
+use App\Services\CategoryService;
+use CodeIgniter\Config\Factories;
 
 class CategoriesController extends BaseController
 {
+
+    private $categoryService;
+
+    public function __construct()
+    {
+        $this->categoryService = Factories::class(CategoryService::class);
+    }
+
     public function index()
     {
         $data = [
@@ -24,15 +33,42 @@ class CategoriesController extends BaseController
             return redirect()->back();
         }
 
-        $categoryModel = new CategoryModel();
+        return $this->response->setJSON(['data' => $this->categoryService->getAllCategories()]);
+      
+    }
 
-        $categories = $categoryModel->asObject()->orderBy('id', 'DESC')->findAll();
+    public function getCategoryInfo()
+    {
+        if (!$this->request->isAJAX()) {
+
+            return redirect()->back();
+        }
+
+        $category = $this->categoryService->getCategory($this->request->getGetPost('id'));
+
+        $options = [
+            'class'         => 'form-control',
+            'placeholder'   => 'Escolha...',
+            'selected'      => !(empty($category->parent_id)) ? $category->parent_id :""
+        ];
+
+        $response = [
+            'category' => $category,
+            'parents'  => $this->categoryService->getMultinivel('parent_id', $options)
+        ];
+
+       return $this->response->setJSON($response);
+      
+    }
+
+    public function update()
+    {
+        //** validar form */
+        $category = $this->categoryService->getCategory($this->request->getGetPost('id'));
 
         echo '<pre>';
-        print_r($categories);
+        print_r($category);
         exit;
 
-        $data = [];
-      
     }
 }

@@ -46,7 +46,7 @@ class CreateTableCategories extends Migration
                 'default'    => null,
             ],
 
-            'delete_at'      => [
+            'deleted_at'      => [
                 'type'       => 'DATETIME',
                 'null'       => true,
                 'default'    => null,
