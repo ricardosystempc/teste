@@ -31,9 +31,13 @@
                 <div class="card-header">
                 <h5><?php echo $title ?? ''; ?></h5>
 
+                <button id="createCategoryBtn" class="btn btn-success btn-sm float-end">Criar Categoria</button>
+
                 </div>
 
         <div class="card-body">
+
+        <a class="btn btn-info btn-sm mt-2 mb-4" href="<?php echo route_to('categories.archived');?>">Categorias Arquivadas</a>
 
                 <table class="table table-borderless table-striped" id="dataTable">
                     <thead>
@@ -76,7 +80,7 @@
 
       <label for="name" class="form-label">Nome</label>
       <input type="text" class="form-control" id="name" name="name">
-      <span class="text-danter error-text name"></span>
+      <span class="text-danger error-text name"></span>
 
       </div>
 
@@ -118,6 +122,17 @@
 <?php echo $this->include('Manager/Categories/Scripts/_datatable_all'); ?>
 <?php echo $this->include('Manager/Categories/Scripts/_get_category_info'); ?>
 <?php echo $this->include('Manager/Categories/Scripts/_submit_modal_create_update'); ?>
+<?php echo $this->include('Manager/Categories/Scripts/_show_modal_to_create'); ?>
+<?php echo $this->include('Manager/Categories/Scripts/_archive_category'); ?>
+
+<script>
+  function refreshCSRFToken(token) {
+
+    $('[name="<?php echo csrf_token(); ?>"]').val(token);
+    $('meta[name="<?php echo csrf_token(); ?>"]').attr('content', token);
+  }
+
+</script>
 
 
 

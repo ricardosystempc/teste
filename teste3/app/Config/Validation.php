@@ -40,4 +40,24 @@ class Validation
     //--------------------------------------------------------------------
     // Rules
     //--------------------------------------------------------------------
+
+     //--------------------------------------------------------------------
+    // Validação da categoria
+    //--------------------------------------------------------------------
+
+    public $category = [
+        'name'     => 'required|min_length[3]|max_length[90]|is_unique[categories.name,id,{id}]',
+        
+    ];
+
+    public $category_errors = [
+        'name' => [
+            'required'   => 'O nome é obrigatório.',
+            'min_length' => 'Pelo menos 3 Caracteres',
+            'max_length' => 'Maxímo permitidos de Caracteres 90',
+            'is_unique' => 'Essa categoria já existe',
+        ],
+        
+    ];   
+
 }

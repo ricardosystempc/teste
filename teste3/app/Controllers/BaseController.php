@@ -49,4 +49,14 @@ class BaseController extends Controller
 
         // E.g.: $this->session = \Config\Services::session();
     }
+
+    protected function removeSpoofingFromRequest()
+        {
+            $data = $this->request->getPost();
+
+            unset($data['_method']);
+
+            return $data;
+        }
+    
 }

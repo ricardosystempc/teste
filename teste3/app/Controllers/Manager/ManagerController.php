@@ -2,7 +2,7 @@
 
 namespace App\Controllers\Manager;
 
-use App\Models\CategoryModel;
+
 use App\Controllers\BaseController;
 
 class ManagerController extends BaseController

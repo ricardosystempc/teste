@@ -1,0 +1,250 @@
+CRITICAL - 2022-09-18 08:57:22 --> The action you requested is not allowed.
+#0 C:\laragon\www\teste3\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\laragon\www\teste3\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\laragon\www\teste3\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('manager/categor...', 'before')
+#4 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-18 08:57:42 --> The action you requested is not allowed.
+#0 C:\laragon\www\teste3\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\laragon\www\teste3\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\laragon\www\teste3\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('manager/categor...', 'before')
+#4 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-18 09:00:56 --> Invalid file: Manager/Categories/Scripts/_archive_category.php
+#0 C:\laragon\www\teste3\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Manager/Categor...')
+#1 C:\laragon\www\teste3\system\View\View.php(424): CodeIgniter\View\View->render('Manager/Categor...', NULL, true)
+#2 C:\laragon\www\teste3\app\Views\Manager\Categories\index.php(124): CodeIgniter\View\View->include('Manager/Categor...')
+#3 C:\laragon\www\teste3\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#4 C:\laragon\www\teste3\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\laragon\www\teste3\system\Common.php(1089): CodeIgniter\View\View->render('Manager/Categor...', Array, true)
+#6 C:\laragon\www\teste3\app\Controllers\Manager\CategoriesController.php(30): view('Manager/Categor...', Array)
+#7 C:\laragon\www\teste3\system\CodeIgniter.php(832): App\Controllers\Manager\CategoriesController->index()
+#8 C:\laragon\www\teste3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\CategoriesController))
+#9 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-09-18 09:00:57 --> Invalid file: Manager/Categories/Scripts/_archive_category.php
+#0 C:\laragon\www\teste3\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Manager/Categor...')
+#1 C:\laragon\www\teste3\system\View\View.php(424): CodeIgniter\View\View->render('Manager/Categor...', NULL, true)
+#2 C:\laragon\www\teste3\app\Views\Manager\Categories\index.php(124): CodeIgniter\View\View->include('Manager/Categor...')
+#3 C:\laragon\www\teste3\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#4 C:\laragon\www\teste3\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\laragon\www\teste3\system\Common.php(1089): CodeIgniter\View\View->render('Manager/Categor...', Array, true)
+#6 C:\laragon\www\teste3\app\Controllers\Manager\CategoriesController.php(30): view('Manager/Categor...', Array)
+#7 C:\laragon\www\teste3\system\CodeIgniter.php(832): App\Controllers\Manager\CategoriesController->index()
+#8 C:\laragon\www\teste3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\CategoriesController))
+#9 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-09-18 09:02:50 --> The action you requested is not allowed.
+#0 C:\laragon\www\teste3\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\laragon\www\teste3\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\laragon\www\teste3\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('manager/categor...', 'before')
+#4 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-18 09:11:35 --> The action you requested is not allowed.
+#0 C:\laragon\www\teste3\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\laragon\www\teste3\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\laragon\www\teste3\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('manager/categor...', 'before')
+#4 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-18 09:11:47 --> The action you requested is not allowed.
+#0 C:\laragon\www\teste3\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\laragon\www\teste3\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\laragon\www\teste3\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('manager/categor...', 'before')
+#4 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-18 09:22:01 --> The action you requested is not allowed.
+#0 C:\laragon\www\teste3\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\laragon\www\teste3\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\laragon\www\teste3\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('manager/categor...', 'before')
+#4 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-18 09:36:59 --> The action you requested is not allowed.
+#0 C:\laragon\www\teste3\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\laragon\www\teste3\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\laragon\www\teste3\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('manager/categor...', 'before')
+#4 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-18 09:37:21 --> The action you requested is not allowed.
+#0 C:\laragon\www\teste3\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\laragon\www\teste3\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\laragon\www\teste3\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('manager/categor...', 'before')
+#4 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-18 09:40:41 --> The action you requested is not allowed.
+#0 C:\laragon\www\teste3\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\laragon\www\teste3\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\laragon\www\teste3\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('manager/categor...', 'before')
+#4 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-18 10:31:57 --> The action you requested is not allowed.
+#0 C:\laragon\www\teste3\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\laragon\www\teste3\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\laragon\www\teste3\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('manager/categor...', 'before')
+#4 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-18 10:32:11 --> The action you requested is not allowed.
+#0 C:\laragon\www\teste3\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\laragon\www\teste3\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\laragon\www\teste3\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('manager/categor...', 'before')
+#4 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-18 10:32:46 --> The action you requested is not allowed.
+#0 C:\laragon\www\teste3\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\laragon\www\teste3\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\laragon\www\teste3\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('manager/categor...', 'before')
+#4 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-18 10:32:56 --> The action you requested is not allowed.
+#0 C:\laragon\www\teste3\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\laragon\www\teste3\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\laragon\www\teste3\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('manager/categor...', 'before')
+#4 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-18 16:44:25 --> The action you requested is not allowed.
+#0 C:\laragon\www\teste3\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\laragon\www\teste3\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\laragon\www\teste3\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('manager/categor...', 'before')
+#4 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-18 17:57:40 --> The action you requested is not allowed.
+#0 C:\laragon\www\teste3\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\laragon\www\teste3\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\laragon\www\teste3\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('manager/categor...', 'before')
+#4 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-18 17:57:54 --> The action you requested is not allowed.
+#0 C:\laragon\www\teste3\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\laragon\www\teste3\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\laragon\www\teste3\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('manager/categor...', 'before')
+#4 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-18 18:03:12 --> The action you requested is not allowed.
+#0 C:\laragon\www\teste3\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\laragon\www\teste3\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\laragon\www\teste3\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('manager/categor...', 'before')
+#4 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-18 18:07:54 --> The action you requested is not allowed.
+#0 C:\laragon\www\teste3\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\laragon\www\teste3\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\laragon\www\teste3\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('manager/categor...', 'before')
+#4 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-18 18:28:02 --> The action you requested is not allowed.
+#0 C:\laragon\www\teste3\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\laragon\www\teste3\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\laragon\www\teste3\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('manager/categor...', 'before')
+#4 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-18 18:40:52 --> The action you requested is not allowed.
+#0 C:\laragon\www\teste3\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\laragon\www\teste3\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\laragon\www\teste3\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('manager/categor...', 'before')
+#4 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-18 18:44:37 --> The action you requested is not allowed.
+#0 C:\laragon\www\teste3\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\laragon\www\teste3\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\laragon\www\teste3\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('manager/categor...', 'before')
+#4 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-18 18:46:28 --> The action you requested is not allowed.
+#0 C:\laragon\www\teste3\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\laragon\www\teste3\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\laragon\www\teste3\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('manager/categor...', 'before')
+#4 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-18 18:46:48 --> The action you requested is not allowed.
+#0 C:\laragon\www\teste3\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\laragon\www\teste3\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\laragon\www\teste3\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('manager/categor...', 'before')
+#4 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-18 18:55:29 --> The action you requested is not allowed.
+#0 C:\laragon\www\teste3\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\laragon\www\teste3\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\laragon\www\teste3\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('manager/categor...', 'before')
+#4 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-18 18:55:33 --> The action you requested is not allowed.
+#0 C:\laragon\www\teste3\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\laragon\www\teste3\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\laragon\www\teste3\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('manager/categor...', 'before')
+#4 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-18 18:55:35 --> The action you requested is not allowed.
+#0 C:\laragon\www\teste3\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\laragon\www\teste3\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\laragon\www\teste3\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('manager/categor...', 'before')
+#4 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-18 18:55:40 --> The action you requested is not allowed.
+#0 C:\laragon\www\teste3\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\laragon\www\teste3\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\laragon\www\teste3\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('manager/categor...', 'before')
+#4 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-18 18:55:42 --> The action you requested is not allowed.
+#0 C:\laragon\www\teste3\system\Security\Security.php(289): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 C:\laragon\www\teste3\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 C:\laragon\www\teste3\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('manager/categor...', 'before')
+#4 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

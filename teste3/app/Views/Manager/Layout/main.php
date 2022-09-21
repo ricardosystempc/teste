@@ -15,7 +15,19 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="<?php echo site_url('manager_assets/css/styles.css') ?>" rel="stylesheet" />
 
+        <link href="<?php echo site_url('manager_assets/toastr/toastr.min.css') ?>" rel="stylesheet" />
+
         <?php echo $this->renderSection('styles'); ?>
+
+        <style>
+            /**
+            Quando eu clicar no menu da sidebar, ajustar o layout da tabela Toggle Menu
+            */
+            .dataTables_scrollHeadInner,
+            .table {
+                width: 100% !important
+            }
+        </style>    
 
     </head>
     <body>
@@ -76,8 +88,11 @@
         <!-- Core theme JS-->
         <script src="<?php echo site_url('manager_assets/') ?>js/scripts.js"></script>
 
+        <script src="<?php echo site_url('manager_assets/toastr/toastr.min.js') ?>"></script>
+
         <?php echo $this->renderSection('scripts'); ?>
 
+        
 
     </body>
 </html>
