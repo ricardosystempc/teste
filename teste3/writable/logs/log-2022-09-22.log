@@ -1,0 +1,27 @@
+CRITICAL - 2022-09-22 08:47:40 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::setSegment()
+#0 C:\laragon\www\teste3\app\Controllers\BaseController.php(54): App\Controllers\BaseController->setUpLanguageOptions(Object(CodeIgniter\HTTP\IncomingRequest))
+#1 C:\laragon\www\teste3\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#2 C:\laragon\www\teste3\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-22 09:34:08 --> syntax error, unexpected identifier "dropdown"
+#0 C:\laragon\www\teste3\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\laragon\www\teste3\system\View\View.php(226): CodeIgniter\View\View->render('Manager/Layout/...', Array, true)
+#2 C:\laragon\www\teste3\system\Common.php(1089): CodeIgniter\View\View->render('Manager/Categor...', Array, true)
+#3 C:\laragon\www\teste3\app\Controllers\Manager\CategoriesController.php(30): view('Manager/Categor...', Array)
+#4 C:\laragon\www\teste3\system\CodeIgniter.php(832): App\Controllers\Manager\CategoriesController->index()
+#5 C:\laragon\www\teste3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\CategoriesController))
+#6 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-09-22 09:34:10 --> syntax error, unexpected identifier "dropdown"
+#0 C:\laragon\www\teste3\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\laragon\www\teste3\system\View\View.php(226): CodeIgniter\View\View->render('Manager/Layout/...', Array, true)
+#2 C:\laragon\www\teste3\system\Common.php(1089): CodeIgniter\View\View->render('Manager/Categor...', Array, true)
+#3 C:\laragon\www\teste3\app\Controllers\Manager\CategoriesController.php(30): view('Manager/Categor...', Array)
+#4 C:\laragon\www\teste3\system\CodeIgniter.php(832): App\Controllers\Manager\CategoriesController->index()
+#5 C:\laragon\www\teste3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\CategoriesController))
+#6 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

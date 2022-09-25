@@ -37,15 +37,15 @@
 
         <div class="card-body">
 
-        <a class="btn btn-primary btn-sm mt-2 mb-4" href="<?php echo route_to('categories');?>">Voltar</a>
+        <a class="btn btn-primary btn-sm mt-2 mb-4" href="<?php echo route_to('categories');?>"><?php echo lang('App.btn_back'); ?></a>
 
                 <table class="table table-borderless table-striped" id="dataTable">
                     <thead>
                         <tr>
                         <th scope="col">ID</th>
-                        <th scope="col">Nome</th>
-                        <th scope="col">Slug</th>
-                        <th scope="col">Ações</th>
+                        <th scope="col"><?php echo lang('Categories.label_name'); ?></th>
+                        <th scope="col"><?php echo lang('Categories.label_slug'); ?></th>
+                        <th scope="col"><?php echo lang('App.btn_actions'); ?></th>
                         </tr>
                     </thead>
                
@@ -72,6 +72,9 @@
 <!-- Envio para o templete principal os arquivos scripts dessa view-->
 
 <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.12.1/r-2.3.0/datatables.min.js"></script>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
 <?php echo $this->include('Manager/Categories/Scripts/_datatable_all_archived'); ?>
 <?php echo $this->include('Manager/Categories/Scripts/_recover_category'); ?>

@@ -72,13 +72,13 @@ class CategoriesController extends BaseController
 
         $options = [
             'class'         => 'form-control',
-            'placeholder'   => 'Escolha...',
+            'placeholder'   => lang('Categories.label_choose_category'),
             'selected'      => !(empty($category->parent_id)) ? $category->parent_id :""
         ];
 
         $response = [
             'category' => $category,
-            'parents'  => $this->categoryService->getMultinivel('parent_id', $options)
+            'parents'  => $this->categoryService->getMultinivel('parent_id', $options, $category->id)
         ];
 
        return $this->response->setJSON($response);
@@ -94,7 +94,7 @@ class CategoriesController extends BaseController
 
         $this->categoryService->trySaveCategory($category);
 
-        return $this->response->setJSON($this->categoryRequest->respondwithMessage(message: 'Dados salvos com sucesso!'));
+        return $this->response->setJSON($this->categoryRequest->respondwithMessage(message: lang('App.success_saved')));
 
     }
 
@@ -109,7 +109,7 @@ class CategoriesController extends BaseController
 
         $this->categoryService->trySaveCategory($category);
 
-        return $this->response->setJSON($this->categoryRequest->respondwithMessage(message: 'Dados salvos com sucesso!'));
+        return $this->response->setJSON($this->categoryRequest->respondwithMessage(message: lang('App.success_saved')));
 
     }
 
@@ -119,7 +119,7 @@ class CategoriesController extends BaseController
 
         $this->categoryService->tryArchiveCategory($this->request->getGetPost('id'));
 
-        return $this->response->setJSON($this->categoryRequest->respondwithMessage(message: 'Categoria arquivada com sucesso!'));
+        return $this->response->setJSON($this->categoryRequest->respondwithMessage(message: lang('App.success_archived')));
 
     }
 
@@ -132,8 +132,8 @@ class CategoriesController extends BaseController
 
         $options = [
             'class'         => 'form-control',
-            'placeholder'   => 'Escolha...',
-            'selected'      =>  ""
+            'placeholder'   => lang('Categories.label_choose_category'),
+            'selected'      =>  "" // estamos criando uma categoria
         ];
 
         $response = [
@@ -150,7 +150,7 @@ class CategoriesController extends BaseController
 
         $this->categoryService->tryRecoverCategory($this->request->getGetPost('id'));
 
-        return $this->response->setJSON($this->categoryRequest->respondwithMessage(message: 'Categoria recuperada com sucesso!'));
+        return $this->response->setJSON($this->categoryRequest->respondwithMessage(message: lang('App.success_recovered')));
 
     }
 
@@ -159,7 +159,7 @@ class CategoriesController extends BaseController
 
         $this->categoryService->tryDeleteCategory($this->request->getGetPost('id'));
 
-        return $this->response->setJSON($this->categoryRequest->respondwithMessage(message: 'Categoria excluída com sucesso!'));
+        return $this->response->setJSON($this->categoryRequest->respondwithMessage(message: lang('App.success_deleted')));
 
     }
 }

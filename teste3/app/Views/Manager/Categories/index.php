@@ -2,7 +2,7 @@
 <!-- Envio para o templete principal os arquivos css e stylesdessa view-->
 <?= $this->section('title') ?>
 
-<?php echo $title ?? ''; ?>
+<?php echo lang('Categories.title_index'); ?>
 
 <?= $this->endSection() ?>
 
@@ -29,23 +29,23 @@
             <div class="card shadow-lg">
 
                 <div class="card-header">
-                <h5><?php echo $title ?? ''; ?></h5>
+                <h5><?php echo lang('Categories.title_index'); ?></h5>
 
-                <button id="createCategoryBtn" class="btn btn-success btn-sm float-end">Criar Categoria</button>
+                <button id="createCategoryBtn" class="btn btn-success btn-sm float-end"><?php echo lang('App.btn_new'); ?></button>
 
                 </div>
 
         <div class="card-body">
 
-        <a class="btn btn-info btn-sm mt-2 mb-4" href="<?php echo route_to('categories.archived');?>">Categorias Arquivadas</a>
+        <a class="btn btn-info btn-sm mt-2 mb-4" href="<?php echo route_to('categories.archived');?>"><?php echo lang('App.btn_all_archived'); ?></a>
 
                 <table class="table table-borderless table-striped" id="dataTable">
                     <thead>
                         <tr>
                         <th scope="col">ID</th>
-                        <th scope="col">Nome</th>
-                        <th scope="col">Slug</th>
-                        <th scope="col">Ações</th>
+                        <th scope="col"><?php echo lang('Categories.label_name'); ?></th>
+                        <th scope="col"><?php echo lang('Categories.label_slug'); ?></th>
+                        <th scope="col"><?php echo lang('App.btn_actions'); ?></th>
                         </tr>
                     </thead>
                
@@ -68,7 +68,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Criar Categoria</h5>
+        <h5 class="modal-title" id="staticBackdropLabel"><th scope="col"><?php echo lang('Categories.title_new'); ?></th></h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
 
@@ -78,7 +78,7 @@
         
       <div class="mb-3">
 
-      <label for="name" class="form-label">Nome</label>
+      <label for="name" class="form-label"><th scope="col"><?php echo lang('Categories.label_name'); ?></th></label>
       <input type="text" class="form-control" id="name" name="name">
       <span class="text-danger error-text name"></span>
 
@@ -86,7 +86,7 @@
 
       <div class="mb-3">
 
-      <label for="parent_id" class="form-label">Categoria pai</label>
+      <label for="parent_id" class="form-label"><th scope="col"><?php echo lang('Categories.label_parent_name'); ?></th></label>
       
       <!-- será preenchido pelo javascript -->
       <span id="boxParents"></span>
@@ -100,8 +100,8 @@
 
 
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary btn-sm">Salvar</button>
+        <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal"><th scope="col"><?php echo lang('App.btn_cancel'); ?></th></button>
+        <button type="submit" class="btn btn-primary btn-sm"><th scope="col"><?php echo lang('App.btn_save'); ?></th></button>
       </div>
 
 

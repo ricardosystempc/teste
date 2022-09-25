@@ -31,7 +31,7 @@ class CategoryService
                     'id'      =>'updateCategoryBtn', // ID do html element
                     'class'  => 'btn btn-primary btn-sm'
                 ],
-                'Editar'
+                lang('App.btn_edit')
             );
 
             $btnArchive = form_button(
@@ -40,7 +40,7 @@ class CategoryService
                     'id'      => 'archiveCategoryBtn', // ID do html element
                     'class'   => 'btn btn-info btn-sm'
                 ],
-                'Arquivar'
+                lang('App.btn_archive')
             );
 
 
@@ -71,7 +71,7 @@ class CategoryService
                     'id'      =>'recoverCategoryBtn', // ID do html element
                     'class'  => 'btn btn-primary btn-sm'
                 ],
-                'Recuperar'
+                lang('App.btn_recover')  
             );
 
             $btnDelete = form_button(
@@ -80,7 +80,7 @@ class CategoryService
                     'id'      =>'deleteCategoryBtn', // ID do html element
                     'class'  => 'btn btn-danger btn-sm'
                 ],
-                'Excluir'
+                lang('App.btn_delete')
             );
 
 
@@ -113,10 +113,10 @@ class CategoryService
     }
 
 
-    public function getMultinivel(string $name, $options = [])
+    public function getMultinivel(string $name, $options = [], int $exceptCategoryID = null)
     {
 
-        $array = $this->categoryModel->asArray()->orderBy('id', 'DESC')->findAll();
+        $array = $this->categoryModel->getParentCategories($exceptCategoryID);
 
         $class_form = "";
         if (isset($options['class'])) {
