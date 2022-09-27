@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Services;
-
+use App\Entities\Plan;
 use App\Models\PlanModel;
 use CodeIgniter\Config\Factories;
 
@@ -17,6 +17,8 @@ class PlanService
     public function getAllPlans(): array
     {
         $plans = $this->planModel->findAll();
+
+
 
         $data = [];
 
@@ -51,5 +53,27 @@ class PlanService
         }
 
         return $data;
+    }
+
+    public function getRecorrences(string $recorrence = null): string
+    {
+        $options    = [];
+        $selected   = [];
+
+        $options    = [
+            ''                          => lang('Plans.label_recorrence'), // option vazio
+            Plan::OPTION_MONTHLY        => lang('Plans.text_monthly'),
+            Plan::OPTION_QUARTERLY      => lang('Plans.text_quarterly'),
+            Plan::OPTION_SEMESTER       => lang('Plans.text_semester'),
+            Plan::OPTION_YEARLY         => lang('Plans.text_yearly'),
+        ];
+
+        // Estou criadno um plano?
+        if(is_null($recorrence)){
+
+            return form_dropdown('recorrence', $options, $selected, ['class' => 'form-control']);
+        }
+
+        // Estamos efetivamente editando um plano....
     }
 }

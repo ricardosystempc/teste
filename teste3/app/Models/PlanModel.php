@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Models;
+use App\Entities\Plan;
 
 class PlanModel extends MyBaseModel
 {
@@ -29,10 +30,10 @@ class PlanModel extends MyBaseModel
     protected $updatedField  = 'updated_at';
     protected $deletedField  = 'deleted_at';
 
-        // Callbacks
-        protected $allowCallbacks = true;
-        protected $beforeInsert   = ['escapeDataXSS',];
-        protected $beforeUpdate   = ['escapeDataXSS',];
+    // Callbacks
+    protected $allowCallbacks = true;
+    protected $beforeInsert   = ['escapeDataXSS',];
+    protected $beforeUpdate   = ['escapeDataXSS',];
 
         
 }

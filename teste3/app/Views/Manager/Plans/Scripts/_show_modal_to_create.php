@@ -1,21 +1,21 @@
 <script>
 
-$(document).on('click', '#createCategoryBtn', function(){
+$(document).on('click', '#createPlanBtn', function(){
 
     $('input[name="_method"]').remove();
 
-    $('.modal-title').text('Criar categoria'); // mudaremos depois com o lang
-    $('#categoryModal').modal('show');
+    $('.modal-title').text('<?php echo lang('Plans.title_new'); ?>'); 
+    $('#modalPlan').modal('show');
 
-    $('#categories-form')[0].reset();
-    $('#categories-form').attr('action', '<?php echo route_to('categories.create'); ?>');
-    $('#categories-form').find('span.error-text').text('');
+    $('#plans-form')[0].reset();
+    $('#plans-form').attr('action', '<?php echo route_to('plans.create'); ?>');
+    $('#plans-form').find('span.error-text').text('');
 
-    var url = '<?php echo route_to('categories.parents'); ?>';
+    var url = '<?php echo route_to('plans.get.recorrences'); ?>';
 
     $.get(url, function(response) {
 
-        $('#boxParents').html(response.parents);       
+        $('#boxRecorrences').html(response.recorrences);       
        
 
     }, 'json');

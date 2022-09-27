@@ -4,6 +4,7 @@ namespace App\Entities;
 
 use CodeIgniter\Entity\Entity;
 
+
 class Plan extends Entity
 {
 
@@ -11,6 +12,11 @@ class Plan extends Entity
     private const INTERVAL_QUARTERLY    = 3; // TRIMESTRE
     private const INTERVAL_SEMESTER     = 6; // SEMESTER
     private const INTERVAL_YEARLY       = 12; // ANUAL
+
+    public const OPTION_MONTHLY      = 'monthly'; // MENSAL
+    public const OPTION_QUARTERLY    = 'quarterly'; // TRIMESTRE
+    public const OPTION_SEMESTER     = 'semester'; // SEMESTER
+    public const OPTION_YEARLY       = 'yearly'; // ANUAL
 
     protected $dates   = ['created_at', 'updated_at', 'deleted_at'];
 
