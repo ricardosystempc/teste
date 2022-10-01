@@ -57,7 +57,7 @@ class BaseController extends Controller
     protected function removeSpoofingFromRequest()
         {
             $data = $this->request->getPost();
-
+            unset($data['id']);
             unset($data['_method']);
 
             return $data;

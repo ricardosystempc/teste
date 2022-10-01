@@ -25,7 +25,7 @@ $('#categories-form').submit(function(e) {
             if(response.success == false) {
 
                // Mostrar mensagem de erro - toast
-            toastr.error('Verifique os erros e tente novamente'); 
+            toastr.error('<?php echo lang('App.danger_validations'); ?>'); 
 
                 $.each(response.errors, function(field, value) {
                     console.log(field);

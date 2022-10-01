@@ -69,7 +69,7 @@ class Plan extends Entity
         $this->attributes['deleted_at'] = null;
     }
 
-    public function isHignlighted()
+    public function isHighlighted()
     {
         return $this->attributes['is_highlighted'] ? lang('Plans.text_is_highlighted') : lang('Plans.text_no_highlighted');
     }

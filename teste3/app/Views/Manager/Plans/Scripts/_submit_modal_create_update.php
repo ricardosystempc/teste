@@ -1,8 +1,9 @@
 <Script>
 
-$('#categories-form').submit(function(e) {
+$('#plans-form').submit(function(e) {
 
     e.preventDefault();
+
     var form = this;
 
     $.ajax({
@@ -25,7 +26,7 @@ $('#categories-form').submit(function(e) {
             if(response.success == false) {
 
                // Mostrar mensagem de erro - toast
-            toastr.error('Verifique os erros e tente novamente'); 
+            toastr.error('<?php echo lang('App.danger_validations'); ?>'); 
 
                 $.each(response.errors, function(field, value) {
                     console.log(field);
@@ -41,15 +42,15 @@ $('#categories-form').submit(function(e) {
             // Mostrar mensagem de sucesso - toast de sucesso
             toastr.success(response.message);
 
-            $('#categoryModal').modal('hide');
+            $('#modalPlan').modal('hide');
             
             $(form)[0].reset();
 
             $("#dataTable").DataTable().ajax.reload(null, false);
 
-            $('.modal-title').text('Criar Categoria'); // mudaremos depois com o lang
+            $('.modal-title').text('<?php echo lang('Plans.title_new'); ?>'); // mudaremos depois com o lang
 
-            $(form).attr('action', '<?php echo route_to('categories.create'); ?>');
+            $(form).attr('action', '<?php echo route_to('plans.create'); ?>');
             $(form).find('input[name="id"]').val('');
             $('input[name="_method"]').remove();
 

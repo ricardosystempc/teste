@@ -1,9 +1,11 @@
 <?php
 
 namespace App\Services;
+
 use App\Entities\Plan;
 use App\Models\PlanModel;
 use CodeIgniter\Config\Factories;
+use PhpParser\Node\Stmt\TryCatch;
 
 class PlanService
 {
@@ -55,6 +57,47 @@ class PlanService
         return $data;
     }
 
+    public function getAllArchived(): array
+    {
+        $plans = $this->planModel->onlyDeleted()->findAll();
+
+
+
+        $data = [];
+
+        foreach ($plans as $plan) {
+
+            $btnRecover = form_button(
+                [
+                    'data-id' =>$plan->id,
+                    'id'      =>'updatePlanBtn', // ID do html element
+                    'class'  => 'btn btn-primary btn-sm'
+                ],
+                lang('App.btn_recover')
+            );
+
+            $btnDelete = form_button(
+                [
+                    'data-id' => $plan->id,
+                    'id'      => 'archivePlanBtn', // ID do html element
+                    'class'   => 'btn btn-danger btn-sm'
+                ],
+                lang('App.btn_delete')
+            );
+
+
+            $data[] = [
+                'code'                 => $plan->plan_id,
+                'name'                 => $plan->name,
+                'is_highlighted'       => $plan->isHighlighted(),
+                'details'              => $plan->details(),
+                'actions'              => $btnRecover . ' '. $btnDelete, 
+            ];
+        }
+
+        return $data;
+    }
+
     public function getRecorrences(string $recorrence = null): string
     {
         $options    = [];
@@ -75,5 +118,66 @@ class PlanService
         }
 
         // Estamos efetivamente editando um plano....
+
+
+        $selected[] = match($recorrence){
+
+            Plan::OPTION_MONTHLY        => Plan::OPTION_MONTHLY,
+            Plan::OPTION_QUARTERLY      => Plan::OPTION_QUARTERLY,
+            Plan::OPTION_SEMESTER       => Plan::OPTION_SEMESTER,
+            Plan::OPTION_YEARLY         => Plan::OPTION_YEARLY,
+            default                     => throw new \InvalidArgumentException("Unsupported recorrence {$recorrence}")
+
+        };
+
+        return form_dropdown('recorrence', $options, $selected, ['class' => 'form-control']);
     }
+
+    public function trySavePlan(Plan $plan, bool $protect = true)
+    {
+        try{
+
+            /**
+             * @todo gerenciar a criação/atualização na gerencianet
+             */
+         
+            if($plan->hasChanged()) {
+
+                $this->planModel->protect($protect)->save($plan);
+            }
+            
+        } catch (\Exception $e) {
+
+            die($e->getMessage());
+        }
+    }
+
+    public function getPlanByID(int $id, bool $withDeleted = false)
+    {
+        $plan = $this->planModel->withDeleted($withDeleted)->find($id);
+
+        if (is_null($plan)) {
+
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Plan not found');
+        }
+
+        return $plan;
+    }
+
+    public function tryArchivePlan(int $id)
+    {
+        try {
+
+            $plan = $this->getPlanByID($id);
+
+            $this->planModel->delete($plan->id);
+        } catch (\Exception $e){
+
+          die($e->getMessage());
+        
+        }
+
+    }
+
+    
 }

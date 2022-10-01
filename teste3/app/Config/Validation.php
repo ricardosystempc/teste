@@ -58,6 +58,27 @@ class Validation
             'is_unique' => 'Categories.name.is_unique',
         ],
         
+    ];  
+    
+    
+      //--------------------------------------------------------------------
+    // Validação da Plans
+    //--------------------------------------------------------------------
+
+    public $plan = [
+        'name'           => 'required|min_length[3]|max_length[90]|is_unique[plans.name,id,{id}]',
+        'recorrence'           => 'required|in_list[monthly,quarterly,semester,yearly]',
+        'value'           => 'required',
+        'description'           => 'required',
+        
+    ];
+
+    public $plan_errors = [
+        'recorrence' => [
+            'in_list'   => 'Plans.recorrence.in_list', // lang() não pode ser colocado aqui... dará erro de sintaxe
+            
+        ],
+        
     ];   
 
 }

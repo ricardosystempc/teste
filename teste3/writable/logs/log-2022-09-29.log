@@ -1,0 +1,28 @@
+CRITICAL - 2022-09-29 10:36:12 --> Call to undefined method App\Entities\Plan::isHighlighted()
+#0 C:\laragon\www\teste3\app\Controllers\Manager\PlansController.php(36): App\Services\PlanService->getAllPlans()
+#1 C:\laragon\www\teste3\system\CodeIgniter.php(832): App\Controllers\Manager\PlansController->getAllPlans()
+#2 C:\laragon\www\teste3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\PlansController))
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-29 10:37:23 --> Call to undefined method App\Entities\Plan::isHighlighted()
+#0 C:\laragon\www\teste3\app\Controllers\Manager\PlansController.php(36): App\Services\PlanService->getAllPlans()
+#1 C:\laragon\www\teste3\system\CodeIgniter.php(832): App\Controllers\Manager\PlansController->getAllPlans()
+#2 C:\laragon\www\teste3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\PlansController))
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-29 17:59:10 --> App\Services\PlanService::getRecorrences(): Return value must be of type string, none returned
+#0 C:\laragon\www\teste3\app\Controllers\Manager\PlansController.php(72): App\Services\PlanService->getRecorrences('monthly')
+#1 C:\laragon\www\teste3\system\CodeIgniter.php(832): App\Controllers\Manager\PlansController->getPlanIfo()
+#2 C:\laragon\www\teste3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\PlansController))
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-29 18:16:50 --> Unsupported lucio
+#0 C:\laragon\www\teste3\app\Controllers\Manager\PlansController.php(72): App\Services\PlanService->getRecorrences('lucio')
+#1 C:\laragon\www\teste3\system\CodeIgniter.php(832): App\Controllers\Manager\PlansController->getPlanIfo()
+#2 C:\laragon\www\teste3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\PlansController))
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
