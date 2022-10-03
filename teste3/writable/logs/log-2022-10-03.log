@@ -1,0 +1,9 @@
+CRITICAL - 2022-10-03 11:25:20 --> Class "App\Services\Exception" not found
+#0 C:\laragon\www\teste3\app\Services\PlanService.php(223): App\Services\GerencianetService->createPlan(Object(App\Entities\Plan))
+#1 C:\laragon\www\teste3\app\Services\PlanService.php(141): App\Services\PlanService->createOrUpdatePlanOnGerencianet(Object(App\Entities\Plan))
+#2 C:\laragon\www\teste3\app\Controllers\Manager\PlansController.php(74): App\Services\PlanService->trySavePlan(Object(App\Entities\Plan))
+#3 C:\laragon\www\teste3\system\CodeIgniter.php(832): App\Controllers\Manager\PlansController->create()
+#4 C:\laragon\www\teste3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\PlansController))
+#5 C:\laragon\www\teste3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\teste3\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

@@ -5,15 +5,18 @@ namespace App\Services;
 use App\Entities\Plan;
 use App\Models\PlanModel;
 use CodeIgniter\Config\Factories;
+use Gerencianet\Gerencianet;
 use PhpParser\Node\Stmt\TryCatch;
 
 class PlanService
 {
     private $planModel;
+    private $gerencianetService;
 
     public function __construct()
     {
         $this->planModel = Factories::models(PlanModel::class);
+        $this->gerencianetService = Factories::class(GerencianetService::class);
     }
 
     public function getAllPlans(): array
@@ -61,8 +64,6 @@ class PlanService
     {
         $plans = $this->planModel->onlyDeleted()->findAll();
 
-
-
         $data = [];
 
         foreach ($plans as $plan) {
@@ -70,7 +71,7 @@ class PlanService
             $btnRecover = form_button(
                 [
                     'data-id' =>$plan->id,
-                    'id'      =>'updatePlanBtn', // ID do html element
+                    'id'      =>'recoverPlanBtn', // ID do html element
                     'class'  => 'btn btn-primary btn-sm'
                 ],
                 lang('App.btn_recover')
@@ -79,7 +80,7 @@ class PlanService
             $btnDelete = form_button(
                 [
                     'data-id' => $plan->id,
-                    'id'      => 'archivePlanBtn', // ID do html element
+                    'id'      => 'deletePlanBtn', // ID do html element
                     'class'   => 'btn btn-danger btn-sm'
                 ],
                 lang('App.btn_delete')
@@ -137,9 +138,7 @@ class PlanService
     {
         try{
 
-            /**
-             * @todo gerenciar a criação/atualização na gerencianet
-             */
+           $this->createOrUpdatePlanOnGerencianet($plan);
          
             if($plan->hasChanged()) {
 
@@ -179,5 +178,58 @@ class PlanService
 
     }
 
-    
+    public function tryRecoverPlan(int $id)
+    {
+        try {
+
+            $plan = $this->getPlanByID($id, withDeleted: true);
+
+            $plan->recover();
+
+            $this->planModel->protect(false)->save($plan);
+        } catch (\Exception $e){
+
+          die($e->getMessage());
+        
+        }
+
+    }
+
+    public function tryDeletePlan(int $id)
+    {
+        try {
+
+            $plan = $this->getPlanByID($id, withDeleted: true);
+
+            /**
+             * @todo deletar plano na gerancianet
+             */
+
+            $this->planModel->delete($plan->id, purge: true);
+        } catch (\Exception $e){
+
+          die($e->getMessage());
+        
+        }
+
+    }
+
+    private function createOrUpdatePlanOnGerencianet(Plan $plan)
+    {
+        // Estamos criando um plano?
+        if(empty($plan->id)){
+
+            // Sim.. criamos o plano na gerencianet
+            return $this->gerencianetService->createPlan($plan);
+
+        }
+
+        // Estamos atualizando....
+        //Contudo, precisamos verificar se o nome do plano foi alterado.
+        // A Gerencianet permite atualizar apenas o nome do plano.
+        if ($plan->hasChanged('name')){
+
+            return $this->gerencianetService->updatePlan($plan);
+        }
+    }  
 }
